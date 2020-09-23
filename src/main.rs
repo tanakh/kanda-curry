@@ -40,44 +40,139 @@ struct RestaurantInfo {
     // regular_holiday: _,
 }
 
-#[derive(Debug)]
+#[derive(Debug, Default)]
 struct BussinessHours {
     day_of_week: String,
     open: Time,
-    lo: Option<Time>,
     close: Time,
+    lo: Option<Time>,
 }
 
-#[derive(Debug)]
+#[derive(Debug, Default)]
 struct Time {
     hour: usize,
     min: usize,
 }
 
-fn parse_business_hours_line(s: &str) -> BussinessHours {
+impl Time {
+    fn new(hour: usize, min: usize) -> Self {
+        Self { hour, min }
+    }
+}
+
+fn parse_business_hours_line(s: &str) -> Option<BussinessHours> {
     // 月～金 11:00～21:00（LO23：00）
     // 土日祝 11:00～17:00
 
+    let org = s.clone();
+
+    let s = s.trim();
+
+    // 正規化
+    let s = s.replace("～", "〜");
+    let s = s.replace("（", "(");
+    let s = s.replace("）", ")");
+    let s = s.replace("L.O.", "LO");
+    let s = s.replace("ＬＯ", "LO");
+    let s = s.replace("平日", "月〜金");
+    let s = s.replace("土曜日", "土");
+    let s = s.replace("土曜", "土");
+    let s = s.replace("月〜日", "月火水木金土日");
+    let s = s.replace("月〜金", "月火水木金");
+    let s = s.replace("火〜金", "火水木金");
+    let s = s.replace("月〜土", "月火水木金土");
+
+    let s = s.replace("デイナー", "ディナー");
+
+    let s = Regex::new(r"([月火水木金土日祝])・([月火水木金土日祝])")
+        .unwrap()
+        .replace_all(&s, "$1$2");
+    let s = Regex::new(r"([月火水木金土日祝])・([月火水木金土日祝])")
+        .unwrap()
+        .replace_all(&s, "$1$2");
+
+    let s = Regex::new(r"\(([月火水木金土日祝]+)\)")
+        .unwrap()
+        .replace_all(&s, "$1");
+
+    let s = Regex::new(r"(\d{2})[：:](\d{2})")
+        .unwrap()
+        .replace_all(&s, "$1:$2");
+
+    let s = Regex::new(r"([月火水木金土日祝]+) *(ランチ|ディナー|カフェ|バー|モーニング)")
+        .unwrap()
+        .replace_all(&s, "$2 $1");
+
+    let s = s.replace("：", "");
+
+    let s = &s;
+
     let re = Regex::new(
-        r#"([月火水木金土日]～[月火水木金土日]|[月火水木金土日祝]+)? *([0-9]+):([0-9]+)～([0-9]+):([0-9]+) ?(LO([0-9]+):([0-9]+))?"#,
+        r#"^(?P<type>カフェ|ランチ|ディナー|バー|モーニング)? *(?P<day>[月火水木金土日祝]+)? *(?P<open_hour>[0-9]+):(?P<open_min>[0-9]+)〜(?P<close_hour>[0-9]+):(?P<close_min>[0-9]+) *(\((?P<lo>LO) *((?P<lo_hour>[0-9]+):(?P<lo_min>[0-9]+)?)?\))?$"#,
     )
     .unwrap();
 
-    let ms = re.captures(s).unwrap();
+    let ms = re.captures(s);
 
-    dbg!(&ms);
+    if ms.is_none() {
+        dbg!(s);
+        return None;
+    }
 
-    todo!()
+    let ms = ms.unwrap();
+
+    let get_int = |n: &str| -> usize { ms.name(n).unwrap().as_str().parse().unwrap() };
+
+    Some(BussinessHours {
+        // day_of_week: ms.name("day").,
+        day_of_week: "?".to_string(),
+        open: Time::new(get_int("open_hour"), get_int("open_min")),
+        close: Time::new(get_int("close_hour"), get_int("close_min")),
+        lo: if let (Some(h), Some(m)) = (ms.name("lo_hour"), ms.name("lo_min")) {
+            Some(Time::new(
+                h.as_str().parse().unwrap(),
+                m.as_str().parse().unwrap(),
+            ))
+        } else {
+            None
+        },
+    })
 }
 
 fn parse_business_hours(s: &str) -> Vec<BussinessHours> {
-    let s = s.replace("<br>", "\n");
+    let s = s
+        .replace("<br>", "\n")
+        .chars()
+        .map(|c| {
+            if c == '\n' || !c.is_whitespace() {
+                c
+            } else {
+                ' '
+            }
+        })
+        .collect::<String>();
+
+    let mut ret = vec![];
 
     for line in s.lines().filter(|l| !l.is_empty()) {
-        todo!()
+        if line.starts_with("※") {
+            continue;
+        }
+
+        if !Regex::new(r"\d[:：]\d").unwrap().is_match(line) {
+            continue;
+        }
+
+        let t = parse_business_hours_line(line);
+        if let Some(t) = t {
+            ret.push(t);
+        } else {
+            dbg!(&s);
+            break;
+        }
     }
 
-    todo!()
+    ret
 }
 
 #[subcmd]
@@ -196,7 +291,7 @@ fn parse() -> Result<()> {
 
     for info in infos {
         let bh = parse_business_hours(&info.business_hours);
-        dbg!(&bh);
+        // dbg!(&bh);
     }
 
     todo!()
