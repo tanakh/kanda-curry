@@ -1,0 +1,22 @@
+[package]
+name = "web"
+version = "0.1.0"
+authors = ["Hideyuki Tanaka <tanaka.hideyuki@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+yew = "0.17"
+wasm-bindgen = { version = "0.2.68", features = ["serde-serialize"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+web-sys = "0.3.45"
+wasm-bindgen-futures = "0.4.18"
+log = "0.4.11"
+web_logger = "0.2"
+lazy_static = "1.4"
+chrono = { version = "0.4", features = ["wasmbind"] }
+urlencoding = "1.1"
+htmlescape = "0.3"

@@ -26,8 +26,8 @@
         "url": "https://kanda-curry.com/?p=8247",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2019/07/mazicurry-s.jpg",
         "address": "千代田区神田小川町3-10-7",
-        "business_hours": "当面の間、営業時間を、<br>月曜から土曜　11：00～20：00（LO）<br>とさせていただきます。<br>どうぞよろしくお願いいたします。<br><br><br>通常の営業時間は以下の通りですが、当面の間上記営業時間となります。何卒ご了承ください。\n平日・土　11:00～22：00（LO)、\n日・祝　11:00～21:00（LO)<br>※土曜の営業時間は、平日と同じです。",
-        "regular_holiday": "年末年始、当面の間日曜日もお休みします。（祝日は営業しています）"
+        "business_hours": "当面の間、営業時間を、<br>月曜から土曜　11：00～20：00（LO）<br>とさせていただきます。<br>どうぞよろしくお願いいたします。",
+        "regular_holiday": "年末年始、日曜日"
     },
     {
         "code": 1322,
@@ -86,7 +86,7 @@
         "url": "https://kanda-curry.com/?p=7138",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s7138.jpg",
         "address": "千代田区神田神保町2-5　北沢ビル1F",
-        "business_hours": "書店・カフェ 11:00～18:00（LO）<br>バー（平日のみ） 20:00～23:30（LO）",
+        "business_hours": "カフェ 11:00～18:00（LO）<br>バー（平日） 20:00～23:30（LO）",
         "regular_holiday": "年末年始"
     },
     {
@@ -146,7 +146,7 @@
         "url": "https://kanda-curry.com/?p=11342",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2020/08/kifune-thamb.jpg",
         "address": "千代田区神田小川町3-11 木村ビル1F",
-        "business_hours": "ランチ：11:30～14:00（LO）<br>ディナー：17:30～22:00（LO）←通常営業時間<br><br>※9月1日から9月15日の間、ディナータイムの営業時間は<br>☆START 17:30<br>☆(LAST ORDER 20:00)<br>☆CLOSE 22:00<br>とさせて頂いております。<br>ご不便をお掛けいたしますが、何卒よろしくお願い致します。",
+        "business_hours": "ランチ：11:30～14:00（LO）<br>ディナー：17:30～22:00（LO）",
         "regular_holiday": "土・日・祝、年末年始"
     },
     {
@@ -187,7 +187,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2020/08/beppin-zinbo.jpg",
         "address": "千代田区神田神保町1-30-10 早乙女ビル１階",
         "business_hours": "火・金　12:00～15:30（LO15:00）<br>水・木・土　11:30～15:30（LO15:00）",
-        "regular_holiday": "月・水・日・祝、年末年始<br>（毎週水曜日もお休みになりました）"
+        "regular_holiday": "月・水・日・祝、年末年始"
     },
     {
         "code": 2005,
@@ -196,7 +196,7 @@
         "url": "https://kanda-curry.com/?p=11426",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2020/08/efu.jpg",
         "address": "千代田区六番町15番地 主婦会館プラザエフ2F",
-        "business_hours": "9月はランチのみの営業ですので何卒ご了承ください。<br>ランチ　11：30～14：30(LO14:00)<br><br>※ガイドブックは以下のように記載しておりますが、9月はランチのみの営業で、ランチ開始時間は11：30～に変更いたしました。何卒ご了承ください。<br>ランチ　11：00～14：30(LO14:00)<br>カフェ　15：00～17：00（貸し切りの場合は休業。HPで確認ください）",
+        "business_hours": "9月はランチのみの営業ですので何卒ご了承ください。<br>ランチ　11：30～14：30(LO14:00)<br><br>※ガイドブックは以下のように記載しておりますが、9月はランチのみの営業で、ランチ開始時間は11：30～に変更いたしました。何卒ご了承ください。<br>ランチ　11：00～14：30(LO14:00)<br>カフェ　15：00～17：00<br>（貸し切りの場合は休業。HPで確認ください）",
         "regular_holiday": "土・日・祝、年末年始"
     },
     {
@@ -207,7 +207,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s2887.jpg",
         "address": "〒101-0051<br>千代田区 神田神保町2－3",
         "business_hours": "11:00～22:30 (LO 22:00)",
-        "regular_holiday": "無休（年末年始を除く）"
+        "regular_holiday": "年末年始"
     },
     {
         "code": 1318,
@@ -216,7 +216,7 @@
         "url": "https://kanda-curry.com/?p=1700",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s1700.jpg",
         "address": "〒101-0054東京都千代田区神田錦町3-13-11",
-        "business_hours": "モーニング 7:00～9:00（LO）<br>ランチ 11:30～14:00（LO）<br>ディナー 14:00～16:00（LO）<br>土曜日（ランチのみ） 11:00～13:00（LO）",
+        "business_hours": "モーニング 7:00～9:00（LO）<br>ランチ 11:30～14:00（LO）<br>ディナー 14:00～16:00（LO）<br>土曜日 11:00～13:00（LO）",
         "regular_holiday": "日曜日・祝日・年末年始"
     },
     {
@@ -226,7 +226,7 @@
         "url": "https://kanda-curry.com/?p=8231",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2019/07/cozy-s.jpg",
         "address": "千代田区内神田2-12-3",
-        "business_hours": "※営業時間が変更になりました。<br>現在、11：00～15：00になっています。<br><br>（ガイドブックには、平日11:00～20:00　と記載していますが変更になりましたので何卒ご了承ください）",
+        "business_hours": "※営業時間が変更になりました。<br>現在、<br>11：00～15：00<br>になっています。<br><br>",
         "regular_holiday": "土・日・祝、年末年始"
     },
     {
@@ -236,8 +236,8 @@
         "url": "https://kanda-curry.com/?p=411",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2020/08/issa-thamb.jpg",
         "address": "千代田区神田小川町3-24-15",
-        "business_hours": "新型コロナウィルス感染症の拡大を受けまして、しばらくの間、<br>11:30～15:00とさせていただきます。<br><br>（平常時：11:30～17:00（LO））",
-        "regular_holiday": "日・祝、年末年始<br>当面の間、土曜日もお休みします。"
+        "business_hours": "新型コロナウィルス感染症の拡大を受けまして、しばらくの間、<br>11:30～15:00<br>とさせていただきます。",
+        "regular_holiday": "日・祝、年末年始、土曜日"
     },
     {
         "code": 1420,
@@ -276,7 +276,7 @@
         "url": "https://kanda-curry.com/?p=11095",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2020/08/bangera.jpg",
         "address": "千代田区\t神田錦町3-22\tテラススクエア1F",
-        "business_hours": "※ランチ営業時間が変更になりました。<br>ランチ　11:00～（LO16:40）→11:00～15:00（LO14:40）<br>ディナー　17:00～23:00（LO22:30）<br><br>※ディナータイムは、8/31まで22:00（LO21:30）までの短縮営業となります。<br>※営業時間は都の要請に合わせて変わることがございます。",
+        "business_hours": "※ランチ営業時間が変更になりました。<br>ランチ　11:00～15:00（LO14:40）<br>ディナー　17:00～23:00（LO22:30）<br><br>※ディナータイムは、8/31まで22:00（LO21:30）までの短縮営業となります。<br>※営業時間は都の要請に合わせて変わることがございます。",
         "regular_holiday": "年末年始"
     },
     {
@@ -287,7 +287,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s4906.jpg",
         "address": "〒102-0073<br>東京都千代田区九段北1-9-14 九段リハイム1F",
         "business_hours": "ランチ　11:30～14:30(LO 14:00)<br>ディナー　18:00～21:30(LO 21:00)",
-        "regular_holiday": "土・日・祝・お盆・年末年始"
+        "regular_holiday": "土・日・祝・年末年始"
     },
     {
         "code": 1308,
@@ -306,7 +306,7 @@
         "url": "https://kanda-curry.com/?p=5151",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2019/07/akl-s.jpg",
         "address": "〒101-0048<br>千代田区神田司町2-10-19 1F",
-        "business_hours": "ランチ 11:30～13:30（LO）<br>ディナー（立ち飲み） 17:00～21:00<br>※お客様がいれば、21:00以降も営業（LO 23:00）<br><br>※変更する場合があるので、詳しくは、公式ホームページをご確認ください<br><a href=\"https://aklcurry.jp/\" target=\"_blank\">https://aklcurry.jp/</a>",
+        "business_hours": "ランチ 11:30～13:30（LO）<br>ディナー 17:00～21:00<br>※お客様がいれば、21:00以降も営業（LO 23:00）<br><br>※変更する場合があるので、詳しくは、公式ホームページをご確認ください<br><a href=\"https://aklcurry.jp/\" target=\"_blank\">https://aklcurry.jp/</a>",
         "regular_holiday": "土・日・祝、年末年始"
     },
     {
@@ -317,7 +317,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2020/08/gakusi-thamb.jpg",
         "address": "千代田区神田錦町3-28",
         "business_hours": "ランチ 11:30～14:00<br>ティー 14:00～17:00<br>ディナー 17:00～22:00（LO21:00）",
-        "regular_holiday": "2020年 8/13～8/16、年末年始"
+        "regular_holiday": "年末年始"
     },
     {
         "code": 1808,
@@ -367,7 +367,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s4882.jpg",
         "address": "千代田区九段北1-3-5ロアジス九段ﾋﾞﾙ 1F",
         "business_hours": "月～金 11:00～21:00<br>土日祝 11:00～17:00",
-        "regular_holiday": "土日祝は不定休、年末年始"
+        "regular_holiday": "土日祝、年末年始"
     },
     {
         "code": 1607,
@@ -377,7 +377,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2020/08/beppin.jpg",
         "address": "〒101-0052<br>東京都千代田区神田小川町3-10 駿台ビル2階",
         "business_hours": "ランチ　11：00～15：30（LO 15：00）<br>火・金 ディナー 18：00～20：00（LO）<br>※ディナー営業は、火曜日と金曜日のみです。コース料理は、別途ご相談承ります。前日までのご予約となります。",
-        "regular_holiday": "月曜日、水曜日、年末年始<br>（水曜日もお休みになりました）"
+        "regular_holiday": "月曜日、水曜日、年末年始"
     },
     {
         "code": 2013,
@@ -427,7 +427,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s6901.jpg",
         "address": "〒101-0041<br>千代田区神田須田町1-21-4　神田NKビル",
         "business_hours": "ランチ　11：00〜15：00（LO14：30）<br>ディナー　17：00〜23：00（LO22：30）",
-        "regular_holiday": "12/31ディナー、1/1"
+        "regular_holiday": "年末年始"
     },
     {
         "code": 1104,
@@ -436,7 +436,7 @@
         "url": "https://kanda-curry.com/?p=547",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s547.jpg",
         "address": "〒101‐0064千代田区猿楽町1－2－3",
-        "business_hours": "11:30～15:00（LO14:45）<br>営業時間が変更になりました。ガイドブックには17：00まで記載されていますが、変更になりましたので何卒ご了承ください。",
+        "business_hours": "11:30～15:00（LO14:45）",
         "regular_holiday": "日曜日、年末年始"
     },
     {
@@ -456,7 +456,7 @@
         "url": "https://kanda-curry.com/?p=694",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s694.jpg",
         "address": "〒101-0051千代田区神田神保町1－64　野間ビル中2階",
-        "business_hours": "(月～金)17:00～翌2:00<br>（土）17:00～24:00",
+        "business_hours": "(月～金)17:00～26:00<br>（土）17:00～24:00",
         "regular_holiday": "日・祝、年末年始"
     },
     {
@@ -466,7 +466,7 @@
         "url": "https://kanda-curry.com/?p=11396",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2020/08/santousya-thamb.jpg",
         "address": "千代田区神田小川町3-2 古室ビル2階",
-        "business_hours": "ランチ：11:00～15:30（LO15:00）<br>ディナー：17:30～22:00（LO21:00）※6月現在、土日はLO20:00",
+        "business_hours": "ランチ：11:00～15:30（LO15:00）<br>ディナー：17:30～22:00（LO21:00）<br>※6月現在、土日はLO20:00",
         "regular_holiday": "月曜日、年末年始"
     },
     {
@@ -477,7 +477,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s1785.jpg",
         "address": "〒101-0021千代田区外神田3-10-9木村ビル1階",
         "business_hours": "11：00～20：00（LO19：45）",
-        "regular_holiday": "火曜日（祝日の場合は翌日）、年末年始"
+        "regular_holiday": "火曜日、年末年始"
     },
     {
         "code": 2018,
@@ -506,8 +506,8 @@
         "url": "https://kanda-curry.com/?p=486",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s486.jpg",
         "address": "〒1010052千代田区神田小川町3-11 ダイワビルB1階",
-        "business_hours": "ランチ月〜金\t11：50～14：00<br>ディナー月〜金\t18：00～深夜<br>ディナー土　18:00〜24:00<br>※土曜日は不定休のためお電話でご確認ください",
-        "regular_holiday": "日・祝、第三土曜日、年末年始"
+        "business_hours": "ランチ月〜金\t11：50～14：00<br>ディナー月〜金\t18：00～24:00<br>ディナー土　18:00〜24:00<br>※土曜日は不定休のためお電話でご確認ください",
+        "regular_holiday": "日・祝、土曜日、年末年始"
     },
     {
         "code": 2014,
@@ -516,7 +516,7 @@
         "url": "https://kanda-curry.com/?p=11631",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2020/08/montapo-thamb.jpg",
         "address": "千代田区神田淡路町2-105 ワテラスアネックス1階",
-        "business_hours": "当面の間、時間を短縮して営業しております。<br>平日 8:00～20:00<br>土日 祝9:00～20:00<br><br><br>ガイドブックには以下の営業時間を掲載しておりますが、当面の間は上記の営業時間となりますので、ご了承ください。<br>月～金 7:30～21:00、土曜日 9:00～21:00、日・祝 9:00～20:00",
+        "business_hours": "当面の間、時間を短縮して営業しております。<br>平日 8:00～20:00<br>土日祝9:00～20:00",
         "regular_holiday": "年末年始"
     },
     {
@@ -557,7 +557,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s3371.jpg",
         "address": "〒101-0052<br>千代田区 神田小川町2-1-15",
         "business_hours": "月〜金 10：00～22：00（LO 21：30）<br>土・日・祝 11:00〜20:30（LO 20:00）",
-        "regular_holiday": "お盆、年末年始"
+        "regular_holiday": "年末年始"
     },
     {
         "code": 1407,
@@ -596,7 +596,7 @@
         "url": "https://kanda-curry.com/?p=2798",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2019/07/takeuchi-s.jpg",
         "address": "〒101-0051<br>千代田区 神保町1-20-3 鈴木ビル1F",
-        "business_hours": "11:30〜<br>ハンバーグとカレーがなくなり次第、閉店",
+        "business_hours": "11:30〜24:00<br>ハンバーグとカレーがなくなり次第、閉店",
         "regular_holiday": "土・日・祝、年末年始"
     },
     {
@@ -616,7 +616,7 @@
         "url": "https://kanda-curry.com/?p=2911",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s2911.jpg",
         "address": "〒101-0047<br>千代田区\t内神田1－5－11\tセントラル大手町ビル1階",
-        "business_hours": "ランチ（平日）  : 11:00～15:00（LO）<br>ディナー（月～金）: 17:00～23:00（LO）<br>※土日祝はランチのみの営業になります",
+        "business_hours": "ランチ（平日）   11:00～15:00（LO）<br>ディナー（月～金） 17:00～23:00（LO）<br>※土日祝はランチのみの営業になります",
         "regular_holiday": "年末年始"
     },
     {
@@ -626,8 +626,8 @@
         "url": "https://kanda-curry.com/?p=4916",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s4916.jpg",
         "address": "千代田区外神田３-6-1 丸山ビル１F",
-        "business_hours": "11:30～21:00（LO20:30）<br>第1・第3月曜日　11:30～15:00（LO）",
-        "regular_holiday": "第1・第3月曜日のディナータイム、年末年始"
+        "business_hours": "11:30～21:00（LO20:30）<br>月　11:30～15:00（LO）",
+        "regular_holiday": "月曜日、年末年始"
     },
     {
         "code": 1812,
@@ -647,7 +647,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s2098.jpg",
         "address": "〒101-0054<br>千代田区神田錦町3-17",
         "business_hours": "平日　11：30〜20：30（LO20：00）<br>土・日・祝　11：30〜14：30（LO14：00）",
-        "regular_holiday": "土日祝は不定休、年末年始"
+        "regular_holiday": "土日祝、年末年始"
     },
     {
         "code": 1711,
@@ -656,7 +656,7 @@
         "url": "https://kanda-curry.com/?p=6882",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s6882.jpg",
         "address": "〒101-0047<br>東京都千代田区内神田3-7-8サトウハウスビル２F",
-        "business_hours": "ランチ(月〜金)　11:15〜15:00 (LO 14:30)<br>ランチ(土日祝)　11:30〜15:00 (LO 14:30)<br>デイナー(月〜金)　17:00〜23:00 (LO 22:00)<br>デイナー(土日祝)　17:00〜22:00 (LO 21:00)<br><br>※8月下旬発行のガイドブックには、<br>ランチ営業の開始時間が、11:00～と記載されていますが、<br>上記の通常の時間帯に戻りました。<br>何卒よろしくお願いいたします。",
+        "business_hours": "ランチ(月〜金)　11:15〜15:00 (LO 14:30)<br>ランチ(土日祝)　11:30〜15:00 (LO 14:30)<br>デイナー(月〜金)　17:00〜23:00 (LO 22:00)<br>デイナー(土日祝)　17:00〜22:00 (LO 21:00)",
         "regular_holiday": "年末年始"
     },
     {
@@ -666,7 +666,7 @@
         "url": "https://kanda-curry.com/?p=1684",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s1684.jpg",
         "address": "〒101-0051東京都千代田区神田神保町２−１　岩波神保町ビル別館１F",
-        "business_hours": "ランチ：11:30～15:00(LO 14:30)<br>デイナー：17:30～26:00(LO 25:00)<br>上記以外：土日祝のディナーLO 21:00<br>※22：00以降のお会計には、10％の深夜料金がかかります。",
+        "business_hours": "ランチ：11:30～15:00(LO 14:30)<br>デイナー：17:30～26:00(LO 25:00)<br>土日祝 ディナー 17:30～21:00 (LO)<br>※22：00以降のお会計には、10％の深夜料金がかかります。",
         "regular_holiday": "年末年始"
     },
     {
@@ -677,7 +677,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2019/07/sangatu-s.jpg",
         "address": "〒101-0052<br>東京都千代田区神田小川町3-14-2漢陽ビル3階",
         "business_hours": "ランチ 11:30～15:00（LO14:30）<br>バー 18:30～24:00（LO23:30）",
-        "regular_holiday": "日・祝、年末年始、土曜は不定休"
+        "regular_holiday": "日・祝、年末年始、土"
     },
     {
         "code": 1915,
@@ -747,7 +747,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2020/08/bd-thamb.jpg",
         "address": "千代田区神田佐久間町2-11 AOIビル中2階",
         "business_hours": "11:30～14:30（LO）",
-        "regular_holiday": "日・祝、年末年始<br>※8月は、月・日曜・祝日・14日・15日がお休み"
+        "regular_holiday": "日・祝、年末年始"
     },
     {
         "code": 1106,
@@ -757,7 +757,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s636.jpg",
         "address": "〒101-0051東京都千代田区神田神保町1－6サンビルＢ1",
         "business_hours": "11:00～20:00　（LO19：45）",
-        "regular_holiday": "日曜（祝日は不定休）、年末年始"
+        "regular_holiday": "日曜、祝日、年末年始"
     },
     {
         "code": 1914,
@@ -797,7 +797,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2019/07/hinoya-ocya-s.jpg",
         "address": "千代田区神田駿河台2-10-3",
         "business_hours": "平日　11:00～21:00（LO）<br>土日祝　11:00～15:00（LO）<br>※ルウがなくなり次第　早めに営業終了する場合がございます。",
-        "regular_holiday": "年末年始、不定休（予告なく休業させて頂く場合がございます。）"
+        "regular_holiday": "年末年始"
     },
     {
         "code": 1815,
@@ -816,7 +816,7 @@
         "url": "https://kanda-curry.com/?p=2196",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s2196.jpg",
         "address": "〒101-0041<br>千代田区 神田須田町1-11",
-        "business_hours": "平日ランチ　11：00～15：30（LO）<br>平日ディナー　17：30～22：30（LO21：30）（カレーレストラン＋居酒屋）<br>土・日・祝　11：30～18：00（LO）",
+        "business_hours": "平日ランチ　11：00～15：30（LO）<br>平日ディナー　17：30～22：30（LO21：30）<br>土・日・祝　11：30～18：00（LO）",
         "regular_holiday": "年末年始"
     },
     {
@@ -827,7 +827,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2020/08/gyusya-thamb.jpg",
         "address": "〒101‐0021<br>東京都千代田区外神田6−5−9",
         "business_hours": "ランチ　11:30〜15:30（LO15:00）<br>ディナー　18:00〜21:30（LO21:00）<br>ハンバーグなくなり次第終了",
-        "regular_holiday": "火曜の夜、年末年始"
+        "regular_holiday": "火、年末年始"
     },
     {
         "code": 1413,
@@ -837,7 +837,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2018/08/s2807.jpg",
         "address": "〒101-0047<br>千代田区\t内神田2-9-11 鉄鋼新聞第二ビル1F",
         "business_hours": "営業時間が変更になりました（ガイドブック記載とは異なっております）。<br>平日<br>11:00～16:00（LO15:30）<br>17:00～21:00（LO21:00）<br>土日祝<br>11:00～16:00（LO15:30）<br>17:00～20:00（LO20:00）",
-        "regular_holiday": "不定休、年末年始<br>※研修等でお休みの場合あり"
+        "regular_holiday": "年末年始"
     },
     {
         "code": 1314,
@@ -866,8 +866,8 @@
         "url": "https://kanda-curry.com/?p=9648",
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2019/07/beans-s.jpg",
         "address": "中央区日本橋本石町4-4-15 平和本社ビル2F",
-        "business_hours": "ランチ 11:30～15:00（LO14:30）<br>ディナー 17:30～22:30（LO22:00）⇒当面の間、17:30～22：00（LO21:00）です。<br>",
-        "regular_holiday": "日曜日、年末年始、第2土曜日<br>第2土曜日もお休みとなります。何卒ご了承ください。"
+        "business_hours": "ランチ 11:30～15:00（LO14:30）<br>ディナー 17:30～22：00（LO21:00）<br>",
+        "regular_holiday": "日曜日、年末年始、土曜日"
     },
     {
         "code": 1336,
@@ -887,7 +887,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2019/07/sama-s.jpg",
         "address": "千代田区外神田6-15-4",
         "business_hours": "ランチ　 11:30～15:30（LO15:00）<br>ディナー 17:00～22:00（LO21:30）",
-        "regular_holiday": "第2水曜日、年末年始"
+        "regular_holiday": "水曜日、年末年始"
     },
     {
         "code": 1906,
@@ -907,7 +907,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2020/08/apron.jpg",
         "address": "千代田区鍛冶町2-10-3 アパホテル神田駅前 1F",
         "business_hours": "月～金ランチ 11:00～14:30(LO14:00)<br>月～金ディナー 17:30～22:30(LO22:00)<br>※ディナーは事前予約（コース料理）のみ",
-        "regular_holiday": "土・日・祝　※ガイドブックには年中無休とありますが、土日祝がお休みとなります。"
+        "regular_holiday": "土・日・祝"
     },
     {
         "code": 1621,
@@ -937,7 +937,7 @@
         "tn_url": "https://kanda-curry.com/wp/wp-content/uploads/2020/08/kuzuwasyoku.jpg",
         "address": "中央区日本橋室町4-4-10 坂田ビルB1",
         "business_hours": "ランチ　11:30～15:00（LO14:30）<br>ディナー　17:00～23:00（LO22:30）",
-        "regular_holiday": "日曜日、9/22・11/23・12/30・12/31<br>（9/20・11/22・12/13・12/20・12/27は営業）"
+        "regular_holiday": "日曜日"
     },
     {
         "code": 1720,
