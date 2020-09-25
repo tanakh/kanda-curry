@@ -134,6 +134,7 @@ impl Component for Model {
                 <p>
                     <a href="https://kanda-curry.com/?page_id=12180">{"🍛神田カレーグランプリ スタンプラリー2020🍛"}</a>
                     {" の営業中店舗を検索するツールです。"}
+                    <hr/>
                 </p>
                 <MainComponent/>
             </div>
@@ -367,9 +368,8 @@ impl Component for MainComponent {
             }
         };
 
-        html! {
+        let status = html! {
             <>
-
             <h2>{"コース制覇状況"}</h2>
             <br/>
 
@@ -398,8 +398,19 @@ impl Component for MainComponent {
 
             </tbody>
             </table>
+            </>
+        };
 
-            <hr/>
+        html! {
+            <>
+
+            <div class="row">
+
+            <div class="col-md-4">
+            { status }
+            </div>
+
+            <div class="col-lg">
 
             <h2>{"検索条件"}</h2>
             <br/>
@@ -473,6 +484,10 @@ impl Component for MainComponent {
             <div class="card-columns">
             { for visited.into_iter().map(|r| card(r.0, r.1, 0)) }
             </div>
+
+            </div>
+            </div>
+
             </>
         }
     }
