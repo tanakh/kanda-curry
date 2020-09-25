@@ -36,7 +36,7 @@ struct BussinessHours {
 }
 
 impl BussinessHours {
-    fn is_open(&self, dt: &DateTime<FixedOffset>) -> bool {
+    fn time_to_close(&self, dt: &DateTime<FixedOffset>) -> usize {
         let date = dt.date();
         let time = dt.time();
 
@@ -58,11 +58,11 @@ impl BussinessHours {
         if let Some(w) = &self.day_of_week {
             if w == "祝" {
                 if !holiday {
-                    return false;
+                    return 0;
                 }
             } else {
                 if w != wd {
-                    return false;
+                    return 0;
                 }
             }
         }
@@ -70,9 +70,17 @@ impl BussinessHours {
         let tm = Time::new(hour as _, minute as _);
 
         if let Some(lo) = &self.lo {
-            self.open <= tm && &tm < lo
+            if self.open <= tm && &tm < lo {
+                lo.diff_min(&tm) as _
+            } else {
+                0
+            }
         } else {
-            self.open <= tm && tm < self.close
+            if self.open <= tm && tm < self.close {
+                self.close.diff_min(&tm) as _
+            } else {
+                0
+            }
         }
     }
 }
@@ -86,6 +94,14 @@ struct Time {
 impl Time {
     fn new(hour: usize, min: usize) -> Self {
         Self { hour, min }
+    }
+
+    fn to_min(&self) -> usize {
+        self.hour * 60 + self.min
+    }
+
+    fn diff_min(&self, rhs: &Time) -> isize {
+        self.to_min() as isize - rhs.to_min() as isize
     }
 }
 
@@ -234,19 +250,22 @@ impl Component for MainComponent {
                 let ix = "ABCDE".find(&r.course).unwrap();
                 self.props.selected_courses[ix]
             })
-            .partition(|(_, r)| {
+            .map(|(i, r)| {
                 let is_closed = r
                     .regular_holiday
                     .iter()
                     .any(|r| r == weekday || r == "祝" && holiday);
 
-                if is_closed {
-                    return false;
-                }
+                let time_to_close = if is_closed {
+                    0
+                } else {
+                    let bh = &r.business_hours;
+                    bh.iter().map(|bh| bh.time_to_close(&dt)).max().unwrap_or(0)
+                };
 
-                let bh = &r.business_hours;
-                bh.iter().any(|bh| bh.is_open(&dt))
-            });
+                (i, r, time_to_close)
+            })
+            .partition(|(_, _, time_to_close)| *time_to_close > 0);
 
         let mut status = BTreeMap::<String, (usize, usize)>::new();
         let mut free_course = 0;
@@ -276,7 +295,7 @@ impl Component for MainComponent {
             _ => unreachable!(),
         };
 
-        let card = |i: usize, r: &RestaurantInfo| {
+        let card = |i: usize, r: &RestaurantInfo, time_to_close: usize| {
             let s = r.business_hours_raw.replace("<br>", "\n");
             let bh = s
                 .lines()
@@ -285,18 +304,18 @@ impl Component for MainComponent {
 
             let address = r.address.replace("<br>", "\n");
 
-            let border_style = match r.course.as_str() {
-                "A" => "border-danger",
-                "B" => "border-primary",
-                "C" => "border-warning",
-                "D" => "border-success",
-                "E" => "border-secondary",
+            let header_color = match r.course.as_str() {
+                "A" => "#e5407e",
+                "B" => "#0e80d0",
+                "C" => "#df7600",
+                "D" => "#50a639",
+                "E" => "#7d51a0",
                 _ => unreachable!(),
             };
 
             html! {
-                <div class=vec!["card", border_style]>
-                    <div class="card-header">
+                <div class="card">
+                    <div class="card-header text-white" style=format!("background: {}", header_color)>
                         <strong>{ format!("{}コース", r.course) }</strong>
                         <div class="float-right">
                             <small>{"訪問済み"}</small>
@@ -321,6 +340,18 @@ impl Component for MainComponent {
                     </div>
 
                     <ul class="list-group list-group-flush">
+                        {
+                            if time_to_close > 0 && time_to_close <= 30 {
+                                html! {
+                                    <li class="list-group-item text-white bg-danger">
+                                        { "まもなく営業終了" }
+                                    </li>
+                                }
+                            } else {
+                                html! {}
+                            }
+                        }
+
                         <li class="list-group-item">
                         { "営業時間：" }
                         {
@@ -422,7 +453,7 @@ impl Component for MainComponent {
             <br/>
 
             <div class="card-columns">
-            { for avails.into_iter().map(|r| card(r.0, r.1)) }
+            { for avails.into_iter().map(|r| card(r.0, r.1, r.2)) }
             </div>
 
             <hr/>
@@ -431,7 +462,7 @@ impl Component for MainComponent {
             <br/>
 
             <div class="card-columns">
-            { for not_avails.into_iter().map(|r| card(r.0, r.1)) }
+            { for not_avails.into_iter().map(|r| card(r.0, r.1, r.2)) }
             </div>
 
             <hr/>
@@ -440,7 +471,7 @@ impl Component for MainComponent {
             <br/>
 
             <div class="card-columns">
-            { for visited.into_iter().map(|r| card(r.0, r.1)) }
+            { for visited.into_iter().map(|r| card(r.0, r.1, 0)) }
             </div>
             </>
         }
