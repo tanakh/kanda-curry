@@ -130,13 +130,17 @@ impl Component for Model {
                 <p class="lead">{"🍛営業中店舗検索ツール🍛"}</p>
             </div>
 
-            <div class="container">
+            <div class="container-fluid">
+            <div class="col">
                 <p>
-                    <a href="https://kanda-curry.com/?page_id=12180">{"🍛神田カレーグランプリ スタンプラリー2020🍛"}</a>
+                    <div class="text-center">
+                    <a href="https://kanda-curry.com/?page_id=12180">{"神田カレーグランプリ スタンプラリー2020"}</a>
                     {" の営業中店舗を検索するツールです。"}
+                    </div>
                     <hr/>
                 </p>
                 <MainComponent/>
+            </div>
             </div>
 
             <footer class="footer mt-auto" style="text-align: center; padding: 20px; background-color: #f5f5f5;">
@@ -287,12 +291,12 @@ impl Component for MainComponent {
         );
 
         let degree = match cleard_course {
-            0 => "未獲得🥺",
-            1 => "神田カレーマイスター🏅",
-            2 => "神田カレーブロンズマイスター🥉",
-            3 => "神田カレーシルバーマイスター🥈",
-            4 => "神田カレーゴールドマイスター🥇",
-            5 => "神田カレーグランドマイスター👑",
+            0 => "🥺未獲得",
+            1 => "🏅神田カレーマイスター",
+            2 => "🥉神田カレーブロンズマイスター",
+            3 => "🥈神田カレーシルバーマイスター",
+            4 => "🥇神田カレーゴールドマイスター",
+            5 => "👑神田カレーグランドマイスター",
             _ => unreachable!(),
         };
 
@@ -373,8 +377,7 @@ impl Component for MainComponent {
             <h2>{"コース制覇状況"}</h2>
             <br/>
 
-            <p class="h4">{ format!("称号：{}", degree) }</p>
-            <br/>
+            <p><strong>{ "称号：" }{ degree }</strong></p>
 
             <table class="d-flex table">
             <tbody>
@@ -404,13 +407,13 @@ impl Component for MainComponent {
         html! {
             <>
 
-            <div class="row">
+            <div class="row d-flex">
 
-            <div class="col-md-4">
+            <div class="d-flex-column mr-4 ml-4">
             { status }
             </div>
 
-            <div class="col-lg">
+            <div class="col-lg mr-4">
 
             <h2>{"検索条件"}</h2>
             <br/>
